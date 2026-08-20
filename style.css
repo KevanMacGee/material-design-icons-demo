@@ -110,6 +110,35 @@ p.subtitle {
     line-height: 1.6;
 }
 
+.header-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.header-link .material-symbols-outlined {
+    font-size: 1.1rem;
+}
+
+.header-link:hover {
+    border-color: var(--accent-color);
+    background: var(--hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--hover-bg);
+}
+
 .category {
     margin-bottom: 4rem;
 }
